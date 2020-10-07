@@ -1,26 +1,26 @@
-Dank der aktuellen Corona Lage (und der beginnenenden zweiten Welle) ist jetzt eine neue Vorsichtsmaßnahme (gerade im Winter) gegen Corona hinzugekommen: LÜFTEN
+Dank der aktuellen Corona Lage (und der beginnenden zweiten Welle) ist jetzt eine neue Vorsichtsmaßnahme (gerade im Winter) gegen Corona hinzugekommen: LÜFTEN
 
-Und damit man weiß wann man lüften soll kann man man natürlich messen ob die Luft 'schlecht' ist...
+Und damit man weiß, wann man lüften soll, kann man man natürlich messen, ob die Luft 'schlecht' ist...
 
-Da wir Menschen die ganze Zeit schlechte Luft ausatmen müssen wir nur messen wieviel ausgeatmet wurde. Hierzu kann man entweder direkt das von Menschen ausgeatmete CO2 (Kohlendioxid) messen, oder aber die sogenannten VOC (Volatile Organic Compounds) die wir Menschen nebenbei auch erzeugen. Während CO2 in der Frischluft in etwa in der Konzentration 400 ppm (Parts per million) vorkommt, so finden wir die typischen VOC-Gase in Frischluft garnicht. Bei CO2 gehen wir ab ca. 1000 ppm von verbrauchter Luft aus und sollten lüften.
+Da wir Menschen die ganze Zeit schlechte Luft ausatmen, müssen wir nur messen wie viel davon ausgeatmet wurde. Hierzu kann man entweder direkt das von Menschen ausgeatmete CO2 (Kohlendioxid) messen, oder aber die sogenannten VOC (Volatile Organic Compounds), die wir Menschen nebenbei auch erzeugen. Während CO2 in der Frischluft in etwa in der Konzentration 400 ppm (Parts per million) vorkommt, so finden wir die typischen VOC-Gase in Frischluft gar nicht. Bei CO2 gehen wir ab ca. 1000 ppm von verbrauchter Luft aus und sollten lüften.
 
-Zum Messen gibt es nun entweder den Sensor BME680, welcher Luftdruck, Luftfeuchte, Temperatur und VOC misst oder aber den MH-Z19 welcher nur CO2 misst. Beim Chinesen des Vertrauens ist der BME680 um ein paar Euro zu bekommen, der MH-Z19 so um die 20 €. Ein paar Wochen Lieferzeit gibts dazu! Wer weniger Geduld hat wird natürlich auch in deutschen Shops schnell fündig.
+Zum Messen gibt es nun entweder den Sensor BME680, welcher Luftdruck, Luftfeuchte, Temperatur und VOC misst oder aber den MH-Z19, welcher nur CO2 misst. Beim Chinesen des Vertrauens ist der BME680 um ein paar Euro zu bekommen, der MH-Z19 so um die 20 €. Ein paar Wochen Lieferzeit gibt's dazu! Wer weniger Geduld hat, der wird natürlich auch in deutschen Shops schnell fündig.
 
 
 Für den MH-Z19 und einen ESP32 habe ich in meinem Repo in der Datei main_tempsensor_esp32.py den (Micropython)-Code hinzugefügt.
 
-Ich lasse CO2 somit jede Minute messen, lade es in eine Grafana Datenbank hoch und habe noch dazu einen Alarm der mir meldet wenn die Luft in meinem Büro schlecht wird.
+Ich lasse CO2 somit jede Minute messen, lade es in eine Grafana Datenbank hoch und habe noch dazu einen Alarm, der mir meldet, sobald die Luft in meinem Büro schlecht wird.
 
-Im Verlauf von zwei Tagen sieht das dann wie folgt aus:
-
-
+Im Verlauf von zwei Tagen sieht das wie folgt aus:
 
 
-Ich finde es dabei sehr interessant zu sehen wie das CO2 in meinem Einzelbüro sehr abhängig davon ist, ob die anderen Kollegen lüften oder nicht.
+
+
+Ich finde es dabei sehr interessant zu sehen, wie das CO2 in meinem Einzelbüro sehr abhängig davon ist, ob die anderen Kollegen lüften oder nicht.
 
 Und das obwohl ich das Fenster komplett offen habe momentan!
 
-Für Leute die noch etwas mehr über CO2 und VOC wissen wollen kann ich das Video von Andreass Spiess empfehlen: https://www.youtube.com/watch?v=FL0L-nic9Vw
+Für Leute, die noch etwas mehr über CO2 und VOC wissen wollen, kann ich das Video von Andreass Spiess empfehlen: https://www.youtube.com/watch?v=FL0L-nic9Vw
 
 
 Bleibt gesund!
